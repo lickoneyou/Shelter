@@ -18,6 +18,7 @@ header {
   grid-template-rows: 60px 11fr;
   row-gap: 90px;
   height: 908px;
+  margin-bottom: 80px;
 }
 
 .title {
@@ -109,4 +110,45 @@ header h2 {
 
 .headerDogPic {
   grid-area: headerDogPic;
+}
+/* Main */
+
+/* Section 1 */
+
+section p,
+section h3 {
+  color: #4c4c4c;
+}
+
+.aboutPets {
+  display: grid;
+  grid-template-columns: 595px 1fr;
+  padding: 0 40px;
+}
+
+.aboutPets img {
+  margin: 0 30%;
+}
+
+.aboutPets h3 {
+  font-size: 35px;
+  letter-spacing: 2.1px;
+  line-height: 130%;
+  width: 350px;
+  margin-top: 14px;
+}
+
+.aboutPets p {
+  width: 425px;
+  font-family: Arial;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.aboutPets div * {
+  margin-bottom: 25px;
+}
+
+.aboutPets div *:last-child {
+  margin-bottom: 0;
 }
