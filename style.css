@@ -69,9 +69,6 @@ header {
 
 .header_left_panel {
   grid-area: h2Header;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   align-items: flex-start;
   max-width: 460px;
   display: grid;
@@ -124,6 +121,7 @@ section h3 {
   display: grid;
   grid-template-columns: 595px 1fr;
   padding: 0 40px;
+  margin-bottom: 180px;
 }
 
 .aboutPets img {
@@ -151,4 +149,99 @@ section h3 {
 
 .aboutPets div *:last-child {
   margin-bottom: 0;
+}
+
+/* section 2 */
+
+.sliderWrapper {
+  background: #f6f6f6;
+  position: relative;
+  padding: 0 55px 0 40px;
+}
+
+.titleWrapper {
+  margin-left: 15px;
+}
+
+.sliderWrapper h3 {
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2.1px;
+  line-height: 130%;
+}
+
+.sliderWrapper h3:last-child {
+  margin-bottom: 60px;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-bottom: 60px;
+}
+
+.slider div {
+  height: 435px;
+  width: 270px;
+  flex-shrink: 0;
+  margin-left: 90px;
+  border-radius: 9px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider div * {
+  margin-bottom: 30px;
+}
+
+.slider div p {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.slider div button {
+  border-radius: 100px;
+  border: 2px solid #f1cdb3;
+  color: #292929;
+  padding: 15px 45px;
+  font-size: 17px;
+  letter-spacing: 1.02px;
+  margin: 0 38px;
+}
+
+.slider div:last-child {
+  margin-left: 0;
+}
+
+.btn_left,
+.btn_right {
+  position: absolute;
+  padding: 16px 16px;
+  border-radius: 100%;
+  border: 2px solid #f1cdb3;
+  color: #292929;
+  top: 43%;
+}
+
+.btn_left {
+  left: 40px;
+}
+
+.btn_right {
+  right: 40px;
+}
+
+.rest_btn {
+  padding: 15px 41px;
+  border-radius: 100px;
+  background: #f1cdb3;
+  color: #292929;
+  position: relative;
+  left: 40%;
+  letter-spacing: 1.02px;
+  font-size: 17px;
+  margin-bottom: 100px;
 }
