@@ -121,7 +121,7 @@ section h3 {
   display: grid;
   grid-template-columns: 595px 1fr;
   padding: 0 40px;
-  margin-bottom: 180px;
+  margin-bottom: 100px;
 }
 
 .aboutPets img {
@@ -157,10 +157,13 @@ section h3 {
   background: #f6f6f6;
   position: relative;
   padding: 0 55px 0 40px;
+  margin-bottom: 86px;
 }
 
 .titleWrapper {
   margin-left: 15px;
+  padding-top: 80px;
+  width: 955px;
 }
 
 .sliderWrapper h3 {
@@ -244,4 +247,53 @@ section h3 {
   letter-spacing: 1.02px;
   font-size: 17px;
   margin-bottom: 100px;
+}
+
+/* section 3 */
+
+.helpWrapper {
+  padding: 0 40px;
+  margin-bottom: 100px;
+}
+
+.helpTitleWrapper h3 {
+  font-size: 35px;
+  letter-spacing: 2.1px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.helpTitleWrapper h3:first-child {
+  margin-bottom: 5px;
+}
+
+.helpIconsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 87px;
+}
+
+.helpIconsWrapper > div {
+  height: 115px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.helpIconsWrapper div:last-child {
+  margin-right: 0;
+}
+
+.helpIconsWrapper > div > img {
+  width: 60px;
+  height: 60px;
+}
+
+.helpIconsWrapper > div > p {
+  font-size: 20px;
+  letter-spacing: 1.2px;
 }
