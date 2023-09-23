@@ -253,7 +253,7 @@ section h3 {
 
 .helpWrapper {
   padding: 0 40px;
-  margin-bottom: 100px;
+  margin-bottom: 45px;
 }
 
 .helpTitleWrapper h3 {
@@ -296,4 +296,61 @@ section h3 {
 .helpIconsWrapper > div > p {
   font-size: 20px;
   letter-spacing: 1.2px;
+}
+
+/* section 3 */
+
+.donation {
+  display: grid;
+  grid-template-columns: 6fr 4.1fr;
+  padding: 80px 199px 100px 185px;
+  background: #f6f6f6;
+}
+
+.donation h3 {
+  font-size: 35px;
+  letter-spacing: 2.1px;
+  width: 300px;
+  line-height: 130%;
+}
+
+.donation * {
+  margin-bottom: 20px;
+}
+
+.donation *:last-child {
+  margin-bottom: 0;
+}
+
+.donation h5 {
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  color: #292929;
+}
+
+.donation button {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  border-radius: 9px;
+  background: #f1cdb3;
+  padding: 6px 15px;
+  color: #545454;
+  display: flex;
+}
+
+.donation button::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 23px;
+  background-image: url('./imgs/icons/credit-card.svg');
+  margin-right: 15px;
+}
+
+.donation p {
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+  color: #b2b2b2;
 }
