@@ -408,3 +408,146 @@ footer div * {
   margin-right: 20px;
   background-image: url('./imgs/icons/icon-marker.png');
 }
+
+/* 768 */
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 30px;
+    grid-template-columns: 250px 2fr;
+    grid-template-areas:
+      'title nav'
+      'h2Header h2Header'
+      'headerDogPic headerDogPic';
+    height: 1165px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .header_left_panel {
+    margin: 0 auto;
+    grid-template-rows: 100px 72px 2fr;
+  }
+  .header_left_panel div {
+    align-items: flex-start;
+  }
+
+  header img {
+    width: 569px;
+    height: 593px;
+  }
+
+  .headerDogPic {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* s1 */
+
+  .aboutPets {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'about'
+      'img';
+    row-gap: 50px;
+  }
+
+  .aboutPets img {
+    grid-area: img;
+  }
+
+  .aboutPets div {
+    grid-area: about;
+    margin: 0 auto;
+  }
+
+  /* s2 */
+  .sliderWrapper {
+    padding: 0 30px 0 30px;
+  }
+
+  .slider {
+    margin-left: 0;
+  }
+
+  .slider div {
+    margin-left: 55px;
+  }
+
+  .btn_left,
+  .btn_right {
+    padding: 13px 13px;
+  }
+
+  .rest_btn {
+    left: 35%;
+  }
+
+  /* s3 */
+
+  .helpIconsWrapper > div {
+    width: 33%;
+  }
+
+  .helpWrapper {
+    padding: 0 30px;
+  }
+
+  .helpIconsWrapper {
+    padding: 0 40px;
+  }
+
+  /* s4 */
+
+  .donation {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'donationAbout'
+      'donationImg';
+    row-gap: 60px;
+    padding: 80px 130px 100px 130px;
+  }
+
+  .donation div {
+    grid-area: donationAbout;
+  }
+
+  .donation img {
+    grid-area: donationImg;
+  }
+
+  /* footer */
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'contacts location'
+      'footerImg footerImg';
+    padding: 56px 30px 0px 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    column-gap: 60px;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer div:first-child {
+    grid-area: contacts;
+  }
+
+  footer div:last-child {
+    grid-area: location;
+  }
+
+  footer img {
+    grid-area: footerImg;
+    margin: 0 auto;
+  }
+}
