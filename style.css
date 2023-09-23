@@ -61,6 +61,31 @@ header {
   display: flex;
 }
 
+a {
+  position: relative;
+  text-decoration: none;
+  color: #cdcdcd;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+}
+
+a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #cdcdcd;
+  content: '';
+  transition: width 0.3s ease-out;
+}
+
+a:hover:after,
+a:focus:after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
 .nav > nav > ul > li {
   margin-right: 35px;
   cursor: pointer;
