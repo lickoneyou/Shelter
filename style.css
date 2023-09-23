@@ -163,7 +163,6 @@ section h3 {
 .titleWrapper {
   margin-left: 15px;
   padding-top: 80px;
-  width: 955px;
 }
 
 .sliderWrapper h3 {
@@ -353,4 +352,59 @@ section h3 {
   font-style: italic;
   line-height: 18px;
   color: #b2b2b2;
+}
+
+/* footer */
+
+footer {
+  background-image: url('./imgs/footer-gradient-background.png');
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 130px;
+  padding: 56px 40px 0px 40px;
+}
+
+footer h3 {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 2.1px;
+}
+
+footer h4 {
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 1.2px;
+  color: #f1cdb3;
+  display: flex;
+}
+
+footer div * {
+  margin-bottom: 40px;
+}
+
+.footer_email::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 32px;
+  margin-right: 20px;
+  background-image: url('./imgs/icons/icon-email.svg');
+}
+
+.footer_phone::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 32px;
+  margin-right: 20px;
+  background-image: url('./imgs/icons/icon-phone.svg');
+}
+
+.footer_location::before {
+  content: '';
+  display: block;
+  min-width: 22px;
+  height: 32px;
+  margin-right: 20px;
+  background-image: url('./imgs/icons/icon-marker.png');
 }
