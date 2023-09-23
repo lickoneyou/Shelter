@@ -162,6 +162,7 @@ section h3 {
   position: relative;
   padding: 0 55px 0 40px;
   margin-bottom: 86px;
+  overflow: hidden;
 }
 
 .titleWrapper {
@@ -196,6 +197,7 @@ section h3 {
   background: #fafafa;
   display: flex;
   flex-direction: column;
+  transition: all 100ms ease;
 }
 
 .slider div * {
@@ -216,10 +218,6 @@ section h3 {
   font-size: 17px;
   letter-spacing: 1.02px;
   margin: 0 38px;
-}
-
-.slider div:last-child {
-  margin-left: 0;
 }
 
 .btn_left,
@@ -471,7 +469,7 @@ footer div * {
 
   /* s2 */
   .sliderWrapper {
-    padding: 0 30px 0 30px;
+    padding: 0 30px 0 34px;
   }
 
   .slider {
