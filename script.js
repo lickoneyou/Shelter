@@ -34,11 +34,9 @@ function slide() {
 const mySlider = slide()
 
 btnLeft.addEventListener('click', function () {
-  console.log('left')
   mySlider('left')
 })
 
 btnRight.addEventListener('click', function () {
-  console.log('right')
   mySlider('right')
 })
