@@ -53,6 +53,10 @@ header {
   color: #cdcdcd;
 }
 
+.popUp{
+  display: none;
+}
+
 .nav320 {
   display: none;
   cursor: pointer;
