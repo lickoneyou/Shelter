@@ -895,3 +895,16 @@ footer div * {
 .modal > button:hover {
   background-color: rgb(246, 8, 8);
 }
+
+/* modal 768 */
+
+@media screen and (max-width: 768px) {
+  .modal > img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .modal {
+    width: 90%;
+  }
+}
