@@ -871,6 +871,14 @@ footer div * {
   color: #4c4c4c;
 }
 
+.modal > div ul * {
+  margin-bottom: 10px;
+}
+
+.modal > div ul *:last-child {
+  margin-bottom: 0;
+}
+
 .modal > button {
   font-family: Arial, Helvetica, sans-serif;
   color: #4c4c4c;
