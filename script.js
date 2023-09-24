@@ -11,7 +11,7 @@ function slide() {
   return (direction) => {
     if (direction === 'left') {
       slider.forEach((el) => {
-          el.style.order -= -1
+        el.style.order -= -1
         if (el.style.order > slider.length) {
           el.style.order = 1
         }
@@ -39,4 +39,20 @@ btnLeft.addEventListener('click', function () {
 
 btnRight.addEventListener('click', function () {
   mySlider('right')
+})
+
+// popUp
+
+const popUpBtn = document.querySelector('.nav320')
+const popUp = document.querySelector('.popUp')
+
+popUpBtn.addEventListener('click', function () {
+  if (this.style.transform === 'rotate(90deg)') {
+    this.style.transform = 'rotate(0deg)'
+    popUp.style.right = 0
+    popUp.style.right = '-100%'
+  } else {
+    this.style.transform = 'rotate(90deg)'
+    popUp.style.right = 0
+  }
 })
