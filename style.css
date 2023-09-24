@@ -908,3 +908,24 @@ footer div * {
     width: 90%;
   }
 }
+
+/* modal 320 */
+
+@media screen and (max-width: 320px) {
+  .modal > img {
+    display: none;
+  }
+
+  .modal > div h3 {
+    text-align: center;
+  }
+
+  .modal > div h4 {
+    text-align: center;
+  }
+
+  .modal {
+    height: 60%;
+    margin: 50% auto;
+  }
+}
