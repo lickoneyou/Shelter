@@ -130,25 +130,6 @@ const pets = {
   },
 }
 
-let modal = `
-<div class='modal'>
-  <img src='' alt=''>
-  <div class='disc'>
-    <h3></h3>
-    <h4></h4>
-    <p></p>
-    <ul>
-      <li>Age:</li>
-      <li>Inoculations:</li>
-      <li>Diseases:</li>
-      <li>Parasites:</li>
-    </ul>
-  </div>
-</div>
-`
-
-function modalWindow() {}
-
 modalBtns.forEach((el) =>
   el.addEventListener('click', function () {
     const pet = pets[this.parentNode.querySelector('p').innerText]
